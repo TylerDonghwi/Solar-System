@@ -1,18 +1,77 @@
 * {
-    background-image: url('/images/galaxy.gif');
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Montserrat;
+    transition: all 0.2s;
 }
 
 body {
+    background-image: url('/images/galaxy.gif');
     height: 100vh;
     width: 100vw;
     text-align: center;
     color: white;
 }
 
-input {
+h1 {
+    margin: 20px;
+}
+
+.buttons * {
+    width: 20vw;
+    height: 10vh;
+    margin-right: 5%;
     color: white;
-    background-color: white;
+    background-color: gray;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input,
+select {
+    padding-right: 2px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.submitBtn {
+    position: relative;
+    margin-right: 0;
+}
+
+.submitBtn:hover {
+    background-color: rgb(110, 110, 110);
+}
+
+.submitBtn:active {
+    left: 1px;
+    top: 1px;
+    background-color: rgb(100, 100, 100);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80vw;
+    height: 50vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+@media(min-height: 500px) {
+    .buttons * {
+        width: 10vw;
+        height: 5vh;
+    }
 }

@@ -8,13 +8,14 @@
     <title>Solar System</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>Calculate a weight of an object on a planet</h1>
-    <input type="number">
-    <select name="" id="">
+    <div class="flex buttons">
+        <input type="number" placeholder="mass in kg">
+        <select name="" id="">
         <option value="none">--select planet</option>
         <option value="Mercury">Mercury</option>
         <option value="Venus">Venus</option>
@@ -26,10 +27,16 @@
         <option value="Neptune">Neptune</option>
         <option value="Pluto">Pluto</option>
     </select>
-    <div class="container">
-        <img src="" alt="planetImage" class="planet-image">
-        <div class="description"></div>
+        <button class="submitBtn">Calculate weight</button>
     </div>
+
+    <div class="flex">
+        <div class="container">
+            <img src="" alt="planetImage" class="planet-image">
+            <div class="description"></div>
+        </div>
+    </div>
+
 </body>
 
 </html>
